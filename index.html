@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Olsi Gjata">
+    <title>Skip Lists</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-heading">Skip Lists</h1>
+    <h2>Introduction</h2>
+    <p class="intro-paragraph">This site will help one discover the importance and usage of Skip Lists, a 
+        data structure that offers efficient sorted sequence maintenance. 
+        Developed by William Pugh in 1989, Skip Lists provide O(n) 
+        time complexity for search, insertion, and deletion. 
+        It has layers of linked lists and a a little bit of randomization;
+        Skip Lists have the balance between simplicity and efficiency, 
+        which makes them a great choice for various applications.</p>
+
+    <h2>Main Features</h2>
+    <ul class="feature-list">
+        <li><strong>Layered Structure:</strong> Skip Lists contain multiple 
+            layers of linked lists, where each layer may contain a subset of elements 
+            from the layer below to improve the efficiency of the search.</li>
+        <li><strong>Randomization:</strong> This algorithm uses randomization when 
+            constructing Skip Lists so it contributes to their structure 
+            and predictable performance.</li>
+        <li><strong>Efficient Search:</strong> Skip Lists have a very efficient search operation, 
+            making them a valuable data structure for quickly locating and retrieving elements explained 
+            below in the algorithm steps.</li>
+    </ul>
+    
+    <h2>Uses of Skip Lists</h2>
+    <ul id="uses-list">
+        <li>Database indexing</li>
+        <li>Priority queues</li>
+        <li>File systems</li>
+        <li>and more...</li>
+    </ul>
+
+    <h2 id="algorithm-title">Algorithm Steps for Search</h2>
+    <p class="algorithm-info">PLEASE REFER TO THE IMAGE BELOW</p>
+    <ol class="algorithm-steps">
+        <li>For example, we are going ahead to start the search for number 45. 
+            We will Start at the top-left or the beginning of ten.</li>
+        <li>We proceed to the next horizontal node 10 is pointing two and 
+            check whether that number is less than or equal to the search number, 45.</li>
+        <li>It is in fact smaller, so we continue and reach 57 which is greater. 
+            Therefore, we stay at the current position and go down a level to continue our search.</li>
+        <li>We continue iterating using that same algorithm until we reach 45 if there is 45.</li>
+    </ol>
+
+    <img src="skipListImage.png" alt="Skip List Image" class="algorithm-image">
+
+    <h3>Additional Resources</h3>
+    <p>For more information, visit <a href="https://igoro.com/archive/skip-lists-are-fascinating/" id="resource-link">this page</a>.</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #dbdbdb;
+    color: #000000;
+    margin: 50px;
+}
+
+.main-heading {
+    color: #000000;
+}
+
+h2 {
+    color: #464646;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 15px;
+}
+
+body ol {
+    list-style-type: decimal;
+    margin-left: 15px;
+}
+
+.algorithm-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#resource-link {
+    color: #009fd8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
